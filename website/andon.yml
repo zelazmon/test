@@ -1,0 +1,16 @@
+general:
+  whitelist: true
+  pipeline_base_name: Website
+#  dependency:
+#   - Pipeline X [Stage X]
+#   - Pipeline Y [Stage Y]
+ 
+post_stage:
+  go_cd_agent_props:
+    - java:8
+    - maven
+  custom_cmd:
+      - sudo docker login -u eekamak -p $passu
+      - sudo docker tag customer:$GO_PIPELINE_COUNTER customer:latest
+Contact GitHub API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Status Help
