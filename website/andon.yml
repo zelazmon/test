@@ -12,5 +12,4 @@ post_stage:
   custom_cmd:
       - sudo docker login -u eekamak -p $passu
       - sudo docker tag customer:$GO_PIPELINE_COUNTER customer:latest
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
+
